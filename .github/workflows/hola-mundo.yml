@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '9.0.x'  # Puedes cambiar por 8.0.x o 6.0.x si usas otra versión
 
       - name: Restaurar dependencias
-        run: dotnet restore MiProyecto
+        run: dotnet restore HolaMundo.cs
 
       - name: Compilar el proyecto
-        run: dotnet build MiProyecto --configuration Release
+        run: dotnet build HolaMundo.cs --configuration Release
 
       - name: Ejecutar la aplicación
-        run: dotnet run --project Program
+        run: dotnet run --project HolaMundo.cs
