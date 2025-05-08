@@ -18,8 +18,8 @@ jobs:
         with:
           dotnet-version: '9.0.x'  # Puedes cambiar por 8.0.x o 6.0.x si usas otra versión
 
-      - name: Restaurar dependencias (opcional en este caso)
-        run: dotnet restore Program.cs
+      #- name: Restaurar dependencias (opcional en este caso)
+      #  run: dotnet restore Program.cs
 
       - name: Compilar el proyecto
         run: dotnet build Program.cs --no-restore --configuration Release
