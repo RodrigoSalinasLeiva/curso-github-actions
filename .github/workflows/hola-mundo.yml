@@ -1,9 +1,6 @@
 name: Ejecutar Hola Mundo en C#
 run-name: ¡Estoy aprendiendo GitHub Actions!
-on:
-  push:
-    branches:
-      - main  # Se ejecutará cuando hagas push al branch 'main'
+on: [push]
 
 jobs:
   build:
